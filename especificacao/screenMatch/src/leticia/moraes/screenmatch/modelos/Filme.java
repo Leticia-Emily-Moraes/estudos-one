@@ -1,14 +1,50 @@
 package leticia.moraes.screenmatch.modelos;
 public class Filme {
-    String nome;
-    int anoDeLancamento;
-    boolean incluidoNoPlano;
+    private String nome;
+    private int anoDeLancamento;
+    private boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
     private int totalDeAvaliacoes;
-    int duracaoEmMinutos;
+    private int duracaoEmMinutos;
 
     public int getTotalDeAvaliacoes(){
         return totalDeAvaliacoes;
+    }
+
+    public void setNome(String pNome){
+        this.nome = pNome;
+    }
+
+    public String getNome() {
+        return this.nome;
+    }
+
+    public int getAnoDeLancamento() {
+        return this.anoDeLancamento;
+    }
+
+    public void setAnoDeLancamento(int pAnoDeLancamento) {
+        this.anoDeLancamento = pAnoDeLancamento;
+    }
+
+    public boolean isIncluidoNoPlano() {
+        return this.incluidoNoPlano;
+    }
+
+    public void setIncluidoNoPlano(boolean pIncluidoNoPlano) {
+        this.incluidoNoPlano = pIncluidoNoPlano;
+    }
+
+    public double getSomaDasAvaliacoes() {
+        return this.somaDasAvaliacoes;
+    }
+
+    public int getDuracaoEmMinutos() {
+        return this.duracaoEmMinutos;
+    }
+
+    public void setDuracaoEmMinutos(int pDuracaoEmMinutos) {
+        this.duracaoEmMinutos = pDuracaoEmMinutos;
     }
 
     public void exibeFichaTécnica(){
@@ -16,7 +52,7 @@ public class Filme {
         System.out.println("Ano de lançamento: " + anoDeLancamento);
     }
 
-    public void avalia(double nota){
+    public void avaliar(double nota){
         somaDasAvaliacoes += nota;
         totalDeAvaliacoes++;
     }
