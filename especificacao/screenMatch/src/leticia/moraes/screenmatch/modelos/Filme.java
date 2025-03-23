@@ -1,3 +1,4 @@
+package leticia.moraes.screenmatch.modelos;
 public class Filme {
     String nome;
     int anoDeLancamento;
@@ -6,21 +7,21 @@ public class Filme {
     private int totalDeAvaliacoes;
     int duracaoEmMinutos;
 
-    int getTotalDeAvaliacoes(){
+    public int getTotalDeAvaliacoes(){
         return totalDeAvaliacoes;
     }
 
-    void exibeFichaTécnica(){
+    public void exibeFichaTécnica(){
         System.out.println("Nome do filme: " + nome);
         System.out.println("Ano de lançamento: " + anoDeLancamento);
     }
 
-    void avalia(double nota){
+    public void avalia(double nota){
         somaDasAvaliacoes += nota;
         totalDeAvaliacoes++;
     }
 
-    double getAvaliacaoDoFilme(){
+    public double getAvaliacaoDoFilme(){
         return somaDasAvaliacoes / totalDeAvaliacoes;
     }
 }

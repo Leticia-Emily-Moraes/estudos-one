@@ -1,3 +1,6 @@
+package leticia.moraes.screenmatch;
+import leticia.moraes.screenmatch.modelos.Filme;
+
 public class Principal {
     public static void main(String[] args) throws Exception {
         Filme meuFilme = new Filme();
