@@ -48,7 +48,7 @@ public class Titulo {
         this.duracaoEmMinutos = pDuracaoEmMinutos;
     }
 
-    public void exibeFichaTécnica(){
+    public void exibeFichaTecnica(){
         System.out.println("Nome do filme: " + nome);
         System.out.println("Ano de lançamento: " + anoDeLancamento);
     }
