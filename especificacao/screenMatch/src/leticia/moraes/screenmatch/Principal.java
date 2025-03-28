@@ -1,4 +1,5 @@
 package leticia.moraes.screenmatch;
+import leticia.moraes.screenmatch.calculos.CalculadoraDeTempo;
 import leticia.moraes.screenmatch.modelos.Filme;
 import leticia.moraes.screenmatch.modelos.Serie;
 
@@ -24,5 +25,10 @@ public class Principal {
         lost.setEpisodiosPorTemporada(10);
         lost.setMinutoPorEpisodio(50);
         System.out.println("Minutos para maratonar Lost: " + lost.getDuracaoEmMinutos());
+
+        CalculadoraDeTempo calc = new CalculadoraDeTempo();
+
+        calc.inclui(meuFilme);
+        System.out.println(calc.getTempoTotal());
     }
 }
